@@ -13,6 +13,9 @@ const Wrapper = styled.View`
 
 
 class Home extends React.Component<Props, State> {
+  static navigationOptions = {
+    header: null
+  }
   state = {
     counters: [
       {score: 0},

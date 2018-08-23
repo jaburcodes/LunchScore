@@ -40,7 +40,7 @@ const PointCard = ({score, onPlusPress, onMinusPress, reverse}) => (
       <ScoreText>{score}</ScoreText>
     </ScoreWrapper>
     <ButtonsWrapper> 
-      <Button text="-" onPress={onMinusPress}/>
+      <Button text="-" onPress={onMinusPress} left/>
       <Button text="+" onPress={onPlusPress}/>
     </ButtonsWrapper>
   </Wrapper>

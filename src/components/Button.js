@@ -9,9 +9,11 @@ const Wrapper = styled.TouchableOpacity`
   justify-content: center;
   align-items: center;
   background-color: #0932FD;
-  border-bottom-left-radius: 20px;  
-  border-bottom-right-radius: 20px;
-
+  ${p => p.left ? `
+    border-bottom-left-radius: 20px;  
+  ` : `
+  border-bottom-right-radius: 20px;  
+  `}
 `;
 
 const Text = styled.Text`
@@ -19,8 +21,8 @@ const Text = styled.Text`
   font-size: 40px;
 `;
 
-const Button = ({text, onPress}) => (
-  <Wrapper onPress={onPress}>
+const Button = ({text, onPress, left}) => (
+  <Wrapper onPress={onPress} left={left}>
     <Text>{text}</Text>
   </Wrapper>
 )
