@@ -1,7 +1,7 @@
 /** @format */
 import * as React from 'react';
 import {AppRegistry} from 'react-native';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components/native';
 
 import App from './src/App';
 import theme from './src/utils/theme';

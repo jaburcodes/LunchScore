@@ -1,19 +1,14 @@
 // @flow
 
 import * as React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
-const Wrapper = styled.TouchableOpacity`
+const Wrapper = styled.View`
   background-color: #ffffff;
   flex: 1;
   justify-content: center;
   align-items: center;
   background-color: #0932FD;
-  ${p => p.left ? `
-    border-bottom-left-radius: 20px;  
-  ` : `
-  border-bottom-right-radius: 20px;  
-  `}
 `;
 
 const Text = styled.Text`
@@ -22,7 +17,7 @@ const Text = styled.Text`
 `;
 
 const Button = ({text, onPress, left}) => (
-  <Wrapper onPress={onPress} left={left}>
+  <Wrapper onTouchStart={onPress}>
     <Text>{text}</Text>
   </Wrapper>
 )

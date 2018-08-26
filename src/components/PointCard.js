@@ -1,7 +1,7 @@
 // @flow
 
 import * as React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 import Button from './Button';
 
 const Wrapper = styled.View`
@@ -40,7 +40,7 @@ const PointCard = ({score, onPlusPress, onMinusPress, reverse}) => (
       <ScoreText>{score}</ScoreText>
     </ScoreWrapper>
     <ButtonsWrapper> 
-      <Button text="-" onPress={onMinusPress} left/>
+      <Button text="-" onPress={onMinusPress} />
       <Button text="+" onPress={onPlusPress}/>
     </ButtonsWrapper>
   </Wrapper>
