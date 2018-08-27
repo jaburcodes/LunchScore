@@ -5,18 +5,16 @@ import styled from 'styled-components/native';
 import PointCard from '../components/PointCard';
 
 const Wrapper = styled.View`
-  background-color: #ffffff;
+  background-color: #25D366;
   flex-direction: row;
   flex: 1;
 `;
 
 const CardWrapper = styled.View`
-  background-color: #ffffff;
+  background-color: #25D366;
   flex-direction: column;
   flex: 1;
 `;
-
-
 
 class Home extends React.Component<Props, State> {
   static navigationOptions = {

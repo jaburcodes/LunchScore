@@ -4,11 +4,12 @@ import * as React from 'react';
 import styled from 'styled-components/native';
 
 const Wrapper = styled.View`
-  background-color: #ffffff;
   flex: 1;
   justify-content: center;
   align-items: center;
-  background-color: #0932FD;
+  background-color: #131418;
+  border-color: #25D366;
+  border-width: 1px;
 `;
 
 const Text = styled.Text`

@@ -5,15 +5,15 @@ import styled from 'styled-components/native';
 import Button from './Button';
 
 const Wrapper = styled.View`
-  background-color: #ffffff;
+  background-color: #131418;
   flex: 1;
   margin: 20px;
   elevation: 5;
-  border-radius: 20px;  
+  border-radius: 40px;  
 `;
 
 const ScoreWrapper = styled.View`
-  background-color: #ffffff;
+  background-color: #131418;
   flex: 3;
   justify-content: center;
   align-items: center;
@@ -22,8 +22,8 @@ const ScoreWrapper = styled.View`
 `;
 
 const ScoreText = styled.Text`
-  color: #0932FD;
-  font-size: 52px;
+  color: #ffffff;
+  font-size: 82px;
 `;
 
 const ButtonsWrapper = styled.View`
@@ -40,7 +40,7 @@ const PointCard = ({score, onPlusPress, onMinusPress, reverse}) => (
       <ScoreText>{score}</ScoreText>
     </ScoreWrapper>
     <ButtonsWrapper> 
-      <Button text="-" onPress={onMinusPress} />
+      <Button text="-" onPress={onMinusPress}/>
       <Button text="+" onPress={onPlusPress}/>
     </ButtonsWrapper>
   </Wrapper>
