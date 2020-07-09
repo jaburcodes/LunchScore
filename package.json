@@ -8,8 +8,8 @@
     "release": "cd android && ./gradlew assembleRelease && cp ./app/build/outputs/apk/app-release.apk ~/Desktop/."
   },
   "dependencies": {
-    "react": "16.4.1",
-    "react-native": "0.56.0",
+    "react": "16.13.1",
+    "react-native": "0.63.0",
     "react-navigation": "^2.0.0",
     "styled-components": "^3.4.5"
   },
